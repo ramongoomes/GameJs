@@ -1,35 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <title>Document</title> -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h2>Jogue Agora!</h2>
     <div class="box-container">
-        
+      <label>
+        <input type="checkbox" class="checkbox" id="chk1" />
+        <i></i>
+      </label>
 
-        <label>
-            <input type="checkbox" id="checked01">
-            <i></i>
-        </label>
-        
-        <label>
-            <input type="checkbox" id="checked02">
-            <i></i>
-        </label>
-        
-        <label>
-            <input type="checkbox" id="checked03">
-            <i></i>
-        </label>
+      <label>
+        <input type="checkbox" class="checkbox" id="chk2" />
+        <i></i>
+      </label>
 
-        
+      <label>
+        <input type="checkbox" class="checkbox" id="chk3" />
+        <i></i>
+      </label>
     </div>
 
-    <button>RESET</button>
-</body>
+    <button id="reset">RESET</button>
+    <button id="#aumentarVelocidade">+</button>
+    <button id="aumentarVelocidade">-</button>
+    <script>
+      // Lógica do Game
+
+      let chk1 = document.querySelector("#chk1");
+      let chk2 = document.querySelector("#chk2");
+      let chk3 = document.querySelector("#chk3");
+      let reset = document.querySelector("#reset");
+      let diminuirVelocidade = document.querySelector("#diminuirVelocidade");
+      let aumentarVelocidade = document.querySelector("#aumentarVelocidade");
+
+      chk1.onclick = function () {
+        if (chk1.checked === true) {
+          chk1.disabled = "true";
+        }
+      };
+      chk2.onclick = function () {
+        if (chk2.checked === true) {
+          chk2.disabled = "true";
+        }
+      };
+      chk3.onclick = function () {
+        if (chk3.checked === true) {
+          chk3.disabled = "true";
+        }
+      };
+
+      
+
+    
+    </script>
+  </body>
 </html>
